@@ -1,0 +1,14 @@
+{
+    "name": "zfcampus/zf-api-first-welcome",
+    "description": "ZF API 1st Welcome Screen",
+    "authors": [
+        {
+            "name": "Ralph Schindler",
+            "email": "ralph@ralphschindler.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
