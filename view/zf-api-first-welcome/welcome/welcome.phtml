@@ -1,0 +1,34 @@
+<!-- Docs page layout -->
+<div class="bs-header">
+    <div class="container">
+        <img src="http://placehold.it/350x150" class="pull-right">
+        <h1>Welcome, Lets get started!</h1>
+        <p>
+            ZF API First is a fully baked ZF2 application skeleton and set of modules that assist
+            in the task of creating API's.  Whether you know a little or a lot about building
+            useful, easy to consume, and well structured API's your consumers, applications or
+            mobile devices can immediately start interacting with.
+
+        </p>
+        <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script>var z = document.createElement("script"); z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+    </div>
+</div>
+
+<h3>Development Mode</h3>
+<p>
+    <?php if (class_exists('ZFApiFirstAdmin\Module', false)): ?>
+    Congratulations!  It appears you have your application in development mode.
+    <?php endif; ?>
+    It is important you have your application in development mode.  The easiest way to
+    accomplish this is by copying <pre>config/development.config.php.dist</pre> to
+    <pre>config/development.config.php</pre> This file is in the .gitignore, so when
+    you're ready to move this app to production, the administration featuers will not
+    be available on the production server.
+</p>
+
+<h3>Go To The Admin</h3>
+
+<p>
+    At this point, you're ready to start building.  If this is your first time, try
+    our wizard: <a href="/admin/">first time screens</a>.
+</p>
