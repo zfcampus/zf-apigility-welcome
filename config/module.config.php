@@ -7,7 +7,7 @@ return array(
                 'options' => array(
                     'route'    => '/welcome',
                     'defaults' => array(
-                        'controller' => 'ZFApiFirstWelcome\Welcome',
+                        'controller' => 'ZF\ApiFirstWelcome\Welcome',
                         'action'     => 'welcome',
                     ),
                 ),
@@ -16,7 +16,7 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'ZFApiFirstWelcome\Welcome' => 'ZFApiFirstWelcome\WelcomeController'
+            'ZF\ApiFirstWelcome\Welcome' => 'ZF\ApiFirstWelcome\WelcomeController'
         ),
     ),
     'view_manager' => array(
