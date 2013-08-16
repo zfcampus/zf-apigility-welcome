@@ -11,6 +11,7 @@ class WelcomeController extends AbstractActionController
     {
         $viewModel = new ViewModel();
         $viewModel->setTemplate('zf-api-first-welcome/welcome/welcome');
+        $viewModel->setTerminal(true);
         return $viewModel;
     }
 }
