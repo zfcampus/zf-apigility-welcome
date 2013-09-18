@@ -30,8 +30,16 @@
                 <?php if (!class_exists('ZF\ApiFirstAdmin\Module', false)): ?>
                 <p>
                     It is important you have your application in development mode.  The easiest way to
-                    accomplish this is by copying <pre>config/development.config.php.dist</pre> to
-                    <pre>config/development.config.php</pre> This file is in the .gitignore, so when
+                    accomplish this is by running: 
+                </p>
+
+                <pre>
+php public/index.php development enable
+                </pre>
+                    
+                <p>
+                    This will copy <code>config/development.config.php.dist</code> to
+                    <code>config/development.config.php</code> This file is in the .gitignore, so when
                     you're ready to move this app to production, the administration features will not
                     be available on the production server.  Once you have done this, you will see a
                     button below to take you to the admin section for API 1st development
