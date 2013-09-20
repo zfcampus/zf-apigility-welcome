@@ -27,7 +27,7 @@
                     structured API's your consumers, applications or mobile devices can immediately start interacting with.
                 </p>
 
-                <?php if (!class_exists('ZF\ApiFirstAdmin\Module', false)): ?>
+                <?php if (!class_exists('ZF\Apigility\Admin\Module', false)): ?>
                 <p>
                     It is important you have your application in development mode.  The easiest way to
                     accomplish this is by running: 
@@ -48,7 +48,7 @@ php public/index.php development enable
 
                 <p class="ag-masthead-buttons">
                     <a href="/apidoc" class="btn btn-outline btn-lg">Live API Docs</a>
-                    <?php if (class_exists('ZF\ApiFirstAdmin\Module', false)): ?>
+                    <?php if (class_exists('ZF\Apigility\Admin\Module', false)): ?>
                     <a href="/admin" class="btn btn-outline btn-lg">API Admin</a>
                     <?php endif; ?>
                 </p>
