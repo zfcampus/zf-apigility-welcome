@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\ApiFirstWelcome;
+namespace ZF\Apigility\Welcome;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;

@@ -1,5 +1,5 @@
 {
-    "name": "zfcampus/zf-api-first-welcome",
+    "name": "zfcampus/zf-apigility-welcome",
     "description": "ZF API 1st Welcome Screen",
     "authors": [
         {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "ZF\\ApiFirstWelcome\\": "src/"
+            "ZF\\Apigility\\Welcome\\": "src/"
         }
     }
 }
