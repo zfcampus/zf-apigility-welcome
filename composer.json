@@ -9,7 +9,7 @@
         "framework",
         "zf2"
     ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "http://apigility.org/",
     "autoload": {
         "psr-0": {
             "ZF\\Apigility\\Welcome\\": "src/"
