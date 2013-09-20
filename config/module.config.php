@@ -2,12 +2,12 @@
 return array(
     'router' => array(
         'routes' => array(
-            'zf-api-first-welcome' => array(
+            'zf-apigility-welcome' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
                     'route'    => '/welcome',
                     'defaults' => array(
-                        'controller' => 'ZF\ApiFirstWelcome\Welcome',
+                        'controller' => 'ZF\Apigility\Welcome\Welcome',
                         'action'     => 'welcome',
                     ),
                 ),
@@ -16,12 +16,12 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'ZF\ApiFirstWelcome\Welcome' => 'ZF\ApiFirstWelcome\WelcomeController'
+            'ZF\Apigility\Welcome\Welcome' => 'ZF\Apigility\Welcome\WelcomeController'
         ),
     ),
     'view_manager' => array(
         'template_path_stack' => array(
-            'zf-api-first-welcome' => __DIR__ . '/../view',
+            'zf-apigility-welcome' => __DIR__ . '/../view',
         ),
     ),
 );
