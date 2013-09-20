@@ -1,16 +1,15 @@
 {
     "name": "zfcampus/zf-apigility-welcome",
-    "description": "ZF API 1st Welcome Screen",
-    "authors": [
-        {
-            "name": "Ralph Schindler",
-            "email": "ralph@ralphschindler.com"
-        }
-    ],
+    "description": "Apigility Welcome Screen",
     "minimum-stability": "dev",
-    "require": {
-
-    },
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "api",
+        "apigility",
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
     "autoload": {
         "psr-0": {
             "ZF\\Apigility\\Welcome\\": "src/"
