@@ -1,5 +1,12 @@
 <?php
 return array(
+    'asset_manager' => array(
+        'resolver_configs' => array(
+            'paths' => array(
+                __DIR__ . '/../asset',
+            ),
+        ),
+    ),
     'router' => array(
         'routes' => array(
             'zf-apigility-welcome' => array(

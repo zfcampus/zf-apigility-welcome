@@ -1,0 +1,39 @@
+.ag-welcome-home {
+  background: #0c0c56;
+  color: #fff;
+}
+.ag-welcome-nav {
+  background: #0c0c56;
+  border-color: #463265;
+}
+.ag-welcome-nav .navbar-nav > li > a {
+  color: #B7D9FF;
+}
+.ag-welcome-nav .navbar-nav > li.ag-nav-dashboard a {
+  color: #fff;
+}
+a.ag-welcome-navbar-brand {
+  padding: 0px;
+}
+.ag-welcome-masthead {
+  padding: 130px 15px;
+  text-align: center;
+}
+.ag-welcome-masthead h1 {
+  font-size: 100px;
+}
+.ag-welcome-masthead p.lead {
+  color: #4b70a2;
+}
+.ag-welcome-btn-outline {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #cdbfe3;
+}
+.ag-welcome-btn-outline:hover,
+.ag-welcome-btn-outline:focus,
+.ag-welcome-btn-outline:active {
+  color: #563d7c;
+  background-color: #fff;
+  border-color: #fff;
+}
