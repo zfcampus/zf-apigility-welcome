@@ -1,5 +1,5 @@
-Zf-Apigility-welcome
-====================
+Apigility Welcome Screen
+========================
 
 Welcome page for the web interface of the [Apigility](http://www.apigility.org) project.
 
