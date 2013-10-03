@@ -1,7 +1,7 @@
 {
     "name": "zfcampus/zf-apigility-welcome",
     "description": "Apigility Welcome Screen",
-    "minimum-stability": "dev",
+    "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "api",
@@ -10,6 +10,13 @@
         "zf2"
     ],
     "homepage": "http://apigility.org/",
+    "support": {
+        "email": "apigility-users@zend.com",
+        "irc": "irc://irc.freenode.net/apigility",
+        "source": "https://github.com/zfcampus/zf-apigility-welcome",
+        "issues": "https://github.com/zfcampus/zf-apigility-welcome/issues"
+    },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "ZF\\Apigility\\Welcome\\": "src/"
