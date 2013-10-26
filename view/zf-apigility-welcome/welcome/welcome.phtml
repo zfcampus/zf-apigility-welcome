@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="/zf-apigility/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="/zf-apigility-welcome/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->basePath('/zf-apigility/css/bootstrap.min.css') ?>" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->basePath('/zf-apigility-welcome/css/main.css') ?>" />
     </head>
 
 
@@ -10,8 +10,8 @@
         <header class="navbar navbar-inverse navbar-fixed-top ag-welcome-nav" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="./" class="ag-welcome-navbar-brand">
-<!--                        <img src="/zf-apigility/img/ag-logo.png">-->
+                    <a href="<?= $this->url('zf-apigility-welcome') ?>" class="ag-welcome-navbar-brand">
+<!--                        <img src="<?= $this->basePath('/zf-apigility/img/ag-logo.png') ?>">-->
                     </a>
                 </div>
             </div>
@@ -20,22 +20,22 @@
         <main class="ag-welcome-masthead" id="content" role="main">
             <div class="container">
 
-                <img src="/zf-apigility-welcome/img/ag-hero.png">
+                <img src="<?= $this->basePath('/zf-apigility-welcome/img/ag-hero.png') ?>">
                 <p class="lead">
-                    Apigility is an API Builder, designed to simplify creating 
+                    Apigility is an API Builder, designed to simplify creating
                     and maintaining useful, easy to consume, and well-structured APIs.
                 </p>
 
                 <?php if (!class_exists('ZF\Apigility\Admin\Module', false)): ?>
                 <p>
                     It is important you have your application in development mode.  The easiest way to
-                    accomplish this is by running: 
+                    accomplish this is by running:
                 </p>
 
                 <pre>
 php public/index.php development enable
                 </pre>
-                    
+
                 <p>
                     This will copy <code>config/development.config.php.dist</code> to
                     <code>config/development.config.php</code> This file is in the .gitignore, so when
@@ -47,7 +47,7 @@ php public/index.php development enable
 
                 <p class="ag-masthead-buttons">
                     <?php if (class_exists('ZF\Apigility\Admin\Module', false)): ?>
-                    <a href="/admin" class="btn btn-lg ag-welcome-btn-outline">Get Started!</a>
+                    <a href="<?= $this->url('zf-apigility-admin') ?>" class="btn btn-lg ag-welcome-btn-outline">Get Started!</a>
                     <?php endif; ?>
                 </p>
             </div>
