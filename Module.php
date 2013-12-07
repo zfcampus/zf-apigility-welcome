@@ -4,9 +4,26 @@
  * @copyright Copyright (c) 2013 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-/**
- * This file is placed here for compatibility with Zendframework's ModuleManager.
- * It allows usage of this module even without composer.
- * The original Module.php lives in 'src' directory in order to respect PSR-0
- */
-require_once __DIR__ . '/src/ZF/Apigility/Welcome/Module.php';
+namespace ZF\Apigility\Welcome;
+
+use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
+use Zend\ModuleManager\Feature\ConfigProviderInterface;
+
+class Module implements AutoloaderProviderInterface, ConfigProviderInterface
+{
+    public function getConfig()
+    {
+        return include __DIR__ . '/config/module.config.php';
+    }
+
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/ZF/Apigility/Welcome/',
+                ),
+            ),
+        );
+    }
+}
