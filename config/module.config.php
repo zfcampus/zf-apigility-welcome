@@ -18,7 +18,7 @@ return array(
                 'may_terminate' => true,
                 'options' => array(
                     'defaults' => array(
-                        'controller' => 'ZF\Apigility\Welcome\Welcome',
+                        'controller' => 'ZF\Apigility\Welcome',
                         'action'     => 'redirect',
                     ),
                 ),
@@ -28,7 +28,7 @@ return array(
                         'options' => array(
                             'route'    => '/welcome',
                             'defaults' => array(
-                                'controller' => 'ZF\Apigility\Welcome\Welcome',
+                                'controller' => 'ZF\Apigility\Welcome',
                                 'action'     => 'welcome',
                             ),
                         ),
@@ -39,7 +39,7 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'ZF\Apigility\Welcome\Welcome' => 'ZF\Apigility\Welcome\WelcomeController'
+            'ZF\Apigility\Welcome' => 'ZF\Apigility\Welcome\WelcomeController'
         ),
     ),
     'view_manager' => array(
