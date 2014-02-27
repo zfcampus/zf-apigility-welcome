@@ -18,4 +18,9 @@ class WelcomeController extends AbstractActionController
         $viewModel->setTerminal(true);
         return $viewModel;
     }
+
+    public function redirectAction()
+    {
+        return $this->redirect()->toRoute('zf-apigility/welcome');
+    }
 }

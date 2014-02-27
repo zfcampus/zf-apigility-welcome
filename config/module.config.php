@@ -14,13 +14,24 @@ return array(
     ),
     'router' => array(
         'routes' => array(
-            'zf-apigility-welcome' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+            'zf-apigility' => array(
+                'may_terminate' => true,
                 'options' => array(
-                    'route'    => '/welcome',
                     'defaults' => array(
                         'controller' => 'ZF\Apigility\Welcome\Welcome',
-                        'action'     => 'welcome',
+                        'action'     => 'redirect',
+                    ),
+                ),
+                'child_routes' => array(
+                    'welcome' => array(
+                        'type' => 'Zend\Mvc\Router\Http\Literal',
+                        'options' => array(
+                            'route'    => '/welcome',
+                            'defaults' => array(
+                                'controller' => 'ZF\Apigility\Welcome\Welcome',
+                                'action'     => 'welcome',
+                            ),
+                        ),
                     ),
                 ),
             ),
