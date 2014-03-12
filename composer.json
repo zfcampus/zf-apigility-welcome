@@ -25,7 +25,7 @@
         }
     },
     "require": {
-        "zendframework/zendframework": "~2.3-dev"
+        "zendframework/zendframework": "~2.3"
     },
     "autoload": {
         "psr-0": {
