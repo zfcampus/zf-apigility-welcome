@@ -27,8 +27,11 @@
     "require": {
         "zendframework/zendframework": "~2.3"
     },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "*@dev"
+    },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "ZF\\Apigility\\Welcome\\": "src/"
         },
         "classmap": [
