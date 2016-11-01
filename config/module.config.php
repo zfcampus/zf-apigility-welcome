@@ -1,50 +1,54 @@
 <?php
 /**
  * @license   http://opensource.org/licenses/BSD-3-Clause BSD-3-Clause
- * @copyright Copyright (c) 2014 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright Copyright (c) 2014-2016 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-return array(
-    'asset_manager' => array(
-        'resolver_configs' => array(
-            'paths' => array(
+namespace ZF\Apigility\Welcome;
+
+use Zend\ServiceManager\Factory\InvokableFactory;
+
+return [
+    'asset_manager' => [
+        'resolver_configs' => [
+            'paths' => [
                 __DIR__ . '/../asset',
-            ),
-        ),
-    ),
-    'router' => array(
-        'routes' => array(
-            'zf-apigility' => array(
+            ],
+        ],
+    ],
+    'router' => [
+        'routes' => [
+            'zf-apigility' => [
                 'may_terminate' => true,
-                'options' => array(
-                    'defaults' => array(
-                        'controller' => 'ZF\Apigility\Welcome',
+                'options' => [
+                    'defaults' => [
+                        'controller' => WelcomeController::class,
                         'action'     => 'redirect',
-                    ),
-                ),
-                'child_routes' => array(
-                    'welcome' => array(
-                        'type' => 'Zend\Mvc\Router\Http\Literal',
-                        'options' => array(
-                            'route'    => '/welcome',
-                            'defaults' => array(
-                                'controller' => 'ZF\Apigility\Welcome',
+                    ],
+                ],
+                'child_routes' => [
+                    'welcome' => [
+                        'type' => 'literal',
+                        'options' => [
+                            'route' => '/welcome',
+                            'defaults' => [
+                                'controller' => WelcomeController::class,
                                 'action'     => 'welcome',
-                            ),
-                        ),
-                    ),
-                ),
-            ),
-        ),
-    ),
-    'controllers' => array(
-        'invokables' => array(
-            'ZF\Apigility\Welcome' => 'ZF\Apigility\Welcome\WelcomeController'
-        ),
-    ),
-    'view_manager' => array(
-        'template_path_stack' => array(
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
+    'controllers' => [
+        'factories' => [
+            WelcomeController::class => InvokableFactory::class,
+        ],
+    ],
+    'view_manager' => [
+        'template_path_stack' => [
             'zf-apigility-welcome' => __DIR__ . '/../view',
-        ),
-    ),
-);
+        ],
+    ],
+];
