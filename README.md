@@ -1,8 +1,8 @@
 Apigility Welcome Screen
 ========================
 
-[![Build Status](https://travis-ci.org/zfcampus/zf-apigility-welcome.png)](https://travis-ci.org/zfcampus/zf-apigility-welcome)
-[![Coverage Status](https://coveralls.io/repos/github/zfcampus/zf-apigility-welcome/badge.svg)](https://coveralls.io/github/zfcampus/zf-apigility-welcome)
+[![Build Status](https://travis-ci.org/zfcampus/zf-apigility-welcome.svg?branch=master)](https://travis-ci.org/zfcampus/zf-apigility-welcome)
+[![Coverage Status](https://coveralls.io/repos/github/zfcampus/zf-apigility-welcome/badge.svg?branch=master)](https://coveralls.io/github/zfcampus/zf-apigility-welcome?branch=master)
 
 Welcome page for the web interface of the [Apigility](http://www.apigility.org) project.
 
