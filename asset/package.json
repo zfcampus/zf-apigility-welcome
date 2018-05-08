@@ -15,7 +15,7 @@
     "issues": "https://github.com/zfcampus/zf-apigility-welcome/issues",
     "source": "https://github.com/zfcampus/zf-apigility-welcome",
     "rss": "https://github.com/zfcampus/zf-apigility-welcome/releases.atom",
-    "slack": "https://zendframework-slack.herokuapp.com",
+    "chat": "https://zendframework-slack.herokuapp.com",
     "forum": "https://discourse.zendframework.com/c/questions/apigility"
   },
   "repository": {
@@ -25,8 +25,8 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.7.0",
+    "gulp-clean-css": "^3.9.4",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.1"
   }
 }
