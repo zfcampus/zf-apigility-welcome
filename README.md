@@ -1,6 +1,10 @@
 Apigility Welcome Screen
 ========================
 
+> ## Repository abandoned 2019-12-31
+>
+> This repository has moved to laminas-api-tools/api-tools-welcome.
+
 [![Build Status](https://secure.travis-ci.org/zfcampus/zf-apigility-welcome.svg?branch=master)](https://secure.travis-ci.org/zfcampus/zf-apigility-welcome)
 [![Coverage Status](https://coveralls.io/repos/github/zfcampus/zf-apigility-welcome/badge.svg?branch=master)](https://coveralls.io/github/zfcampus/zf-apigility-welcome?branch=master)
 
