@@ -15,6 +15,7 @@ class WelcomeController extends AbstractActionController
     {
         $viewModel = new ViewModel();
         $viewModel->setTemplate('zf-apigility-welcome/welcome');
+
         return $viewModel;
     }
 
