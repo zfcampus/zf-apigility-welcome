@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- [#6](https://github.com/zfcampus/zf-apigility-welcome/pull/6) adds support for PHP 7.0, 7.1 and 7.2.
+- [#6](https://github.com/zfcampus/zf-apigility-welcome/pull/6) adds support for PHP 7.0 - 7.4.
 
 ### Changed
 
