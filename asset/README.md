@@ -1,8 +1,8 @@
 Apigility Welcome Screen Assets
 ===============================
 
-This directory contains build tools and assets for the zf-apigility-welcome module. CSS
-in this directory is geared towards the welcome screen.
+This directory contains build tools and assets for the `zf-apigility-welcome` module.
+CSS in this directory is geared towards the welcome screen.
 
 Contributing
 ------------
@@ -10,7 +10,6 @@ Contributing
 ### Prerequisites
 
 - node.js and npm
-- grunt
 
 ### Preparing to contribute
 
@@ -20,6 +19,6 @@ At this point, you will have all necessary dependencies.
 
 ### Making changes
 
-- Run `grunt watch`.
-- Edit and save changes in `zf-apigility/css/main.less`.
-- Check in your changes when done, and crate a pull request.
+- Run `gulp watch`.
+- Edit and save changes in `zf-apigility/css/main.scss`.
+- Check in your changes when done, and create a pull request.
